@@ -10,10 +10,9 @@ crate-type = ["cdylib", "rlib"]
 
 [dependencies]
 wasm-bindgen = "0.2"
-rand = "0.8"
+rand = { version = "0.8" , default-features = false }
 rand_pcg = "0.3"
 rand_seeder = "0.2"
-getrandom = { version = "0.2", features = ["js"] }
 
 
 [profile.release]
