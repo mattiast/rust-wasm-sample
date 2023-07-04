@@ -19,3 +19,4 @@ rand_seeder = "0.2"
 lto = true
 # Tell `rustc` to optimize for small code size.
 opt-level = "s"
+strip = "debuginfo"
