@@ -15,13 +15,13 @@ pub fn my_add(j: &mut Jutska) -> u64 {
 }
 
 #[wasm_bindgen]
-pub fn luomus() -> Jutska {
+pub fn new_jutska() -> Jutska {
     let mut rng: rand_pcg::Pcg64 = rand_seeder::Seeder::from(123).make_rng();
     let x: f32 = (0..10000).map(|_| rng.gen::<f32>()).sum();
     Jutska { x, y: 5 }
 }
 
 #[wasm_bindgen]
-pub fn tema(j: Jutska) -> f32 {
+pub fn eat_jutska(j: Jutska) -> f32 {
     j.x
 }
