@@ -1,4 +1,4 @@
-From rust:1.70.0 as builder
+From rust:1.77.2 as builder
 RUN cargo install wasm-bindgen-cli
 RUN rustup target add wasm32-unknown-unknown
 RUN apt update && apt install -y wabt binaryen
